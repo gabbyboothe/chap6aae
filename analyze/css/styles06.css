@@ -1,7 +1,7 @@
 /*
-    Student Name
-	File Name: 
-	Current Date: 
+    Student Namegabby boothe
+	File Name: analyze
+	Current Date: 5-10-24
 */
 
 /* CSS reset */
@@ -13,7 +13,7 @@ body, header, nav, main, footer, img, h1, h3, ul {
 
 /* Style rule for body and images */
 body {
-    background-color: #e5e0fa;
+    background: linear-gradient(to bottom, #e5e0fa, #29157e);
 }
 
 img {
@@ -77,7 +77,7 @@ footer {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 481px), print {
+@media screen and (min-width: 600px), print {
     
     /* Tablet Viewport: Style rules for nav area */
     nav li {
@@ -93,7 +93,27 @@ footer {
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 769px), print {
- 
+ /* Style rule for tablet-desktop class */
+ .tablet-desktop {
+    display: block;
+}
+/* Media Query for Large Desktop Viewport */
+@media only screen and (min-width: 1441px) {
+    /* Style rule for #container selector */
+    #container {
+        width: 1440px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Style rule for the header element in desktop viewport */
+header {
+    width: 25%;
+    float: left;
+}
     /* Desktop Viewport: Style rules for nav */
     nav li {
         border-radius: 0;
@@ -103,12 +123,25 @@ footer {
         display: inline-block;
         padding: 0.7em;
     }
-
+/* Style rule for unordered list elements within the nav element */
+nav ul {
+    text-align: right;
+}
+/* Style rule for navigation links hover state */
+nav li a:hover {
+    color: #4424d6;
+    background-color: #e5e0fa;
+}
     /* Desktop Viewport: Style rules for the main content */
     main {
         border-style: none;
         margin-bottom: 1em 0;
         overflow: auto;
+    }
+    .col-content {
+        width: 30%;
+        float: left;
+        padding: 1.5%;
     }
 
     /* Desktop Viewport: Style rule for footer */
